@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1FCBAF38-3ADE-40C2-8DC4-631E3FAFA4CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{6E2F6C60-B6FD-4057-A103-61649F4D4512}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9FE2725A-F768-4C2E-8882-3FF5EA4E0844}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A385DC8E-05CD-4A9C-86FF-A6C9D57F779C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixelPlusMedia.API", "PixelPlusMedia.API\PixelPlusMedia.API.csproj", "{A4B15BA2-185A-4AEF-851F-F5BF4D3831C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixelPlusMedia.Domain", "PixelPlusMedia.Domain\PixelPlusMedia.Domain.csproj", "{504DD692-978A-45F4-81B2-2141BF87041C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixelPlusMedia.Persistence", "PixelPlusMedia.Persistence\PixelPlusMedia.Persistence.csproj", "{3EE8A9DD-F315-4840-ADBC-8071DB42E554}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixelPlusMedia.Identity", "PixelPlusMedia.Identity\PixelPlusMedia.Identity.csproj", "{0E48048A-EC66-4935-8BA0-973A4AEF5063}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixelPlusMedia.Application", "PixelPlusMedia.Application\PixelPlusMedia.Application.csproj", "{95248A5A-A1F9-4C5C-A875-80BF5B7E2E07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4B15BA2-185A-4AEF-851F-F5BF4D3831C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B15BA2-185A-4AEF-851F-F5BF4D3831C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B15BA2-185A-4AEF-851F-F5BF4D3831C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B15BA2-185A-4AEF-851F-F5BF4D3831C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{504DD692-978A-45F4-81B2-2141BF87041C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{504DD692-978A-45F4-81B2-2141BF87041C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{504DD692-978A-45F4-81B2-2141BF87041C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{504DD692-978A-45F4-81B2-2141BF87041C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE8A9DD-F315-4840-ADBC-8071DB42E554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE8A9DD-F315-4840-ADBC-8071DB42E554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE8A9DD-F315-4840-ADBC-8071DB42E554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE8A9DD-F315-4840-ADBC-8071DB42E554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E48048A-EC66-4935-8BA0-973A4AEF5063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E48048A-EC66-4935-8BA0-973A4AEF5063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E48048A-EC66-4935-8BA0-973A4AEF5063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E48048A-EC66-4935-8BA0-973A4AEF5063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95248A5A-A1F9-4C5C-A875-80BF5B7E2E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95248A5A-A1F9-4C5C-A875-80BF5B7E2E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95248A5A-A1F9-4C5C-A875-80BF5B7E2E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95248A5A-A1F9-4C5C-A875-80BF5B7E2E07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E2F6C60-B6FD-4057-A103-61649F4D4512} = {1FCBAF38-3ADE-40C2-8DC4-631E3FAFA4CF}
+		{9FE2725A-F768-4C2E-8882-3FF5EA4E0844} = {1FCBAF38-3ADE-40C2-8DC4-631E3FAFA4CF}
+		{A385DC8E-05CD-4A9C-86FF-A6C9D57F779C} = {1FCBAF38-3ADE-40C2-8DC4-631E3FAFA4CF}
+		{A4B15BA2-185A-4AEF-851F-F5BF4D3831C7} = {6E2F6C60-B6FD-4057-A103-61649F4D4512}
+		{504DD692-978A-45F4-81B2-2141BF87041C} = {9FE2725A-F768-4C2E-8882-3FF5EA4E0844}
+		{3EE8A9DD-F315-4840-ADBC-8071DB42E554} = {A385DC8E-05CD-4A9C-86FF-A6C9D57F779C}
+		{0E48048A-EC66-4935-8BA0-973A4AEF5063} = {A385DC8E-05CD-4A9C-86FF-A6C9D57F779C}
+		{95248A5A-A1F9-4C5C-A875-80BF5B7E2E07} = {9FE2725A-F768-4C2E-8882-3FF5EA4E0844}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A72CD8F8-4DBC-4855-8A1A-CBFEFAE6B6FF}
+	EndGlobalSection
+EndGlobal

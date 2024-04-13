@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>85741b3f-53dd-432e-80c4-2e6a27db806e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;CS8632</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;CS8632</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Logs\**" />
+    <Content Remove="Logs\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <None Remove="Logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.103.4" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.16.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Serilog" Version="2.11.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PixelPlusMedia.Identity\PixelPlusMedia.Identity.csproj" />
+    <ProjectReference Include="..\PixelPlusMedia.Persistence\PixelPlusMedia.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\AdminPage.622a4613.js" />
+    <None Include="wwwroot\assets\Backdrop.4c08d823.js" />
+    <None Include="wwwroot\assets\Button.1524f2da.js" />
+    <None Include="wwwroot\assets\CircularProgress.e588ccc3.js" />
+    <None Include="wwwroot\assets\FormControlLabel.c3b23ee9.js" />
+    <None Include="wwwroot\assets\General.f2f39158.js" />
+    <None Include="wwwroot\assets\index.162a2ff6.js" />
+    <None Include="wwwroot\assets\index.17560ac5.js" />
+    <None Include="wwwroot\assets\index.94ebcb6c.js" />
+    <None Include="wwwroot\assets\index.ad77f370.js" />
+    <None Include="wwwroot\assets\index.dad713cd.js" />
+    <None Include="wwwroot\assets\index.fd24d832.js" />
+    <None Include="wwwroot\assets\JwtService.2b9a55f4.js" />
+    <None Include="wwwroot\assets\Login.ed9b237f.js" />
+    <None Include="wwwroot\assets\Logo.b590fda8.js" />
+    <None Include="wwwroot\assets\Register.763bc810.js" />
+    <None Include="wwwroot\assets\ThankYouPage.cb4264fa.js" />
+    <None Include="wwwroot\assets\useFormControl.c5ae668b.js" />
+  </ItemGroup>
+
+</Project>
